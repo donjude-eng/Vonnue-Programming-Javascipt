@@ -1,4 +1,4 @@
-const test_prime = (n) =>{
+function test_prime(n)
 {
 
   if (n===1)
