@@ -1,24 +1,15 @@
-function test_prime(n)
-{
+const readline = require("readline-sync");
 
-  if (n===1)
-  {
-    return false;
-  }
-  else if(n === 2)
-  {
-    return true;
-  }else
-  {
-    for(var x = 2; x < n; x++)
-    {
-      if(n % x === 0)
-      {
-        return false;
-      }
+const checkPrimeNumber = (number) => {
+    let primeNumber = true;
+    for (let i = 2; i < number; i++) {
+        if ((number % i) === 0) {
+            primeNumber = false;
+            break;
+        }
     }
-    return true;  
-  }
+    console.log(`The number is ${primeNumber ? "prime" : "not prime"}`)
 }
 
-console.log(test_prime(37));
+const number = readline.question(" Enter the number : ");
+checkPrimeNumber(number);
