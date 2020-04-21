@@ -1,11 +1,10 @@
 //8.Write a program to compare the current item in the array to the next item and print if they are equal or not.
-
-const equalItem = () => {
-    sampleArray = ['1', '3', '3', '4', '4'];
-    for (i = 1; i < 5; i++) {
-        if (sampleArray[i] === sampleArray[i - 1]) {
-            console.log(sampleArray[i], sampleArray[i - 1]);
+const printMultiple3and5 = () => {
+    let sampleArray = ['1', '2', '3', '4', '5', '6', '10'];
+    for (let i = 0; i < sampleArray.length; i++); {
+        if ((sampleArray[i] % 3 === 0) || (sampleArray[i] % 5 === 0)) {
+            console.log(sampleArray[i]);
         }
     }
 }
-equalItem();
+printMultiple3and5();
