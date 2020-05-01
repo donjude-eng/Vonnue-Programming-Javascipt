@@ -9,4 +9,4 @@ const oddOrEvenCheck = (number) => {
 }
 
 const number = readline.question("Enter the number : ");
-oddOrEvenCheck(number);
+oddOrEvenCheck(number);;
