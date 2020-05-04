@@ -1,3 +1,4 @@
+const readline = require ("readline-sync");
 
 const palindromeCheck = (teststr) => {
     const stringLength = testStr.length;
@@ -9,6 +10,7 @@ const palindromeCheck = (teststr) => {
             break;
         }
     }
-    const str =prompt ("Enter the word?")
-    console.log(`The string is ${palindrome ? "palindrome" : "not palindrome"}`);
+    console.log(`The word ${palindrome ? "palindrome" : "not palindrome"}`);
 }
+const testStr = readline.question(" Enter the string : ");
+palindromeCheck(testStr);
